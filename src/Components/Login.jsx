@@ -18,7 +18,7 @@ const Login = () => {
     console.log('Login form data:', form)
     if(form.email==='admin@gmail.com')
       {
-      navigate('/admin')
+      navigate('/AdminDashboard')
     }
       else{
         navigate('/StudentDashboard')

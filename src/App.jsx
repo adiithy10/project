@@ -10,6 +10,7 @@ import Register from './components/Register'
 import AddComplaint from './Components/AddComplaint'
 import ComplainList from './Components/ComplainList'
 import StudentDashboard from './Components/StudentDashboard'
+import AdminDashboard from './Components/AdminDashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +26,7 @@ function App() {
         <Route path = "/addcomplaint" element={<AddComplaint />} />
         <Route path = "/complaintlist" element={<ComplainList />} />
         <Route path="/StudentDashboard" element={<StudentDashboard />} />     
-
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
       </Routes>
     </>
   )
