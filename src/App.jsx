@@ -7,6 +7,8 @@ import NavBar from './components/NavBar'
 import { Route, Routes } from 'react-router-dom'
 import AddComplaint from './components/AddComplaint'
 import ComplainList from './components/ComplainList'
+import StudentDashboard from './components/StudentDashboard'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +19,8 @@ function App() {
       <Routes>
         <Route path = "/" element={<h1>Welcome to the Campus Complaint Management System</h1>} />
         <Route path = "/addcomplaint" element={<AddComplaint />} />
-        <Route path = "/complaintlist" element={<ComplainList />} />     
+        <Route path = "/complaintlist" element={<ComplainList />} />
+        <Route path="/StudentDashboard" element={<StudentDashboard />} />     
       </Routes>
     </>
   )
