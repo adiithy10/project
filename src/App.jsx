@@ -4,7 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import StudentDashboard from './Components/StudentDashboard'
+import Login from './components/Login'
+import Register from './components/Register'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<StudentDashboard/>}/>
+        <Route path='/'element={<Login/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
     </>
   )
