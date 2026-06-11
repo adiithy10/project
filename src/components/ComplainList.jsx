@@ -1,5 +1,6 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
 import React , {useState} from 'react'
+import NavBar from './NavBar'
 
 
 const ComplainList = () => {
@@ -26,6 +27,7 @@ const ComplainList = () => {
 
     return (
         <div>
+            <NavBar />
             <h3>Complaint List</h3>
             <TableContainer>
                 <Table>

@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      
       <Routes>
         <Route path = "/" element={<h1>Welcome to the Campus Complaint Management System</h1>} />
         <Route path = "/addcomplaint" element={<AddComplaint />} />
