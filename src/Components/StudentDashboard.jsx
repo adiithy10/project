@@ -8,10 +8,12 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Button from '@mui/material/Button';
+import NavBar from './NavBar';
 
 const StudentDashboard = () => {
   return (
     <div>
+      <NavBar/>
         <h1>Dashboard</h1>
            <Paper sx={{ width: '100%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 440 }}>
