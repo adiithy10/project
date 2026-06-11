@@ -1,5 +1,6 @@
 import { Button, MenuItem, TextField } from '@mui/material'
 import React, {useState} from 'react'
+import NavBar from './NavBar'
 
 const AddComplaint = () => {
 
@@ -19,6 +20,7 @@ const AddComplaint = () => {
     }
   return (
     <div>
+        <NavBar/>
         <br /><br /><br /><br />
         <h3>Complaint Form</h3>
         <TextField label="Complaint Title" variant="outlined"  /><br /><br />
