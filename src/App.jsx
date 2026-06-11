@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import NavBar from './components/NavBar'
+import NavBar from './Components/NavBar'
 import { Route, Routes } from 'react-router-dom'
-import AddComplaint from './components/AddComplaint'
-import ComplainList from './components/ComplainList'
-import StudentDashboard from './components/StudentDashboard'
+import AddComplaint from './Components/AddComplaint'
+import ComplainList from './Components/ComplainList'
+import StudentDashboard from './Components/StudentDashboard'
 
 
 function App() {
