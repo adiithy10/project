@@ -16,7 +16,15 @@ const Login = () => {
 
   let submitInfo = () => {
     console.log('Login form data:', form)
-    navigate('/dashboard')
+    if(form.email==='admin@gmail.com')
+      {
+      navigate('/admin')
+    }
+      else{
+        navigate('/StudentDashboard')
+      }
+      
+  
   }
 
   return (
