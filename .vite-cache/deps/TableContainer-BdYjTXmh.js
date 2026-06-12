@@ -1,6 +1,6 @@
 import { i as __toESM, t as require_react } from "./react-CZunmVaX.js";
+import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Devaabf6.js";
 //#region node_modules/@mui/material/TableContainer/tableContainerClasses.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 var import_prop_types = /* @__PURE__ */ __toESM(require_prop_types(), 1);
@@ -74,4 +74,4 @@ TableContainer.propTypes = {
 //#endregion
 export { getTableContainerUtilityClass as n, tableContainerClasses as r, TableContainer as t };
 
-//# sourceMappingURL=TableContainer-CCW0Y-Wj.js.map
+//# sourceMappingURL=TableContainer-BdYjTXmh.js.map

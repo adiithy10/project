@@ -1,2 +1,2 @@
-import { n as getTableUtilityClass, r as tableClasses, t as Table } from "./Table-DLX5RgzI.js";
+import { n as getTableUtilityClass, r as tableClasses, t as Table } from "./Table-BbLJT_N5.js";
 export { Table as default, getTableUtilityClass, tableClasses };

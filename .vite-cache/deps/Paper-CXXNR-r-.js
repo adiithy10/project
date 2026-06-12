@@ -1,8 +1,8 @@
 import { i as __toESM, t as require_react } from "./react-CZunmVaX.js";
+import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, k as alpha, m as getOverlayAlpha, q as generateUtilityClass, r as styled, s as useTheme, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, k as alpha, m as getOverlayAlpha, q as generateUtilityClass, r as styled, s as useTheme, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Devaabf6.js";
 import { c as chainPropTypes, i as getTransitionStyles } from "./utils-BAFz8yJQ.js";
-import { t as memoTheme } from "./memoTheme-BJeNW3MA.js";
+import { t as memoTheme } from "./memoTheme-Dl9UblrA.js";
 //#region node_modules/@mui/utils/integerPropType/integerPropType.mjs
 function getTypeByValue(value) {
 	const valueType = typeof value;
@@ -210,4 +210,4 @@ Paper.propTypes = {
 //#endregion
 export { integerPropType as i, getPaperUtilityClass as n, paperClasses as r, Paper as t };
 
-//# sourceMappingURL=Paper-DqboQ4on.js.map
+//# sourceMappingURL=Paper-CXXNR-r-.js.map

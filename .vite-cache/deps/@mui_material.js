@@ -1,19 +1,19 @@
 import { i as __toESM, r as __exportAll, t as require_react } from "./react-CZunmVaX.js";
-import { t as require_react_dom } from "./react-dom.js";
+import { $ as styleFunctionSx_default, A as darken, B as clamp, C as InitColorSchemeScript$1, Ct as blue, D as useRtl, E as useId, Et as common, F as hexToRgb, G as styled$2, H as useThemeProps$1, I as hslToRgb, J as clsx, K as generateUtilityClasses, L as lighten, M as emphasize, N as getContrastRatio, O as exactProp, P as getLuminance, Q as createTheme$1, R as recomposeColor, S as createCssVarsProvider, St as lightBlue, T as ThemeProvider$1, Tt as red, U as getThemeProps, V as useEnhancedEffect, W as resolveProps, X as useTheme$1, Y as ClassNameGenerator, Z as useTheme$2, _ as easing, _t as StyleSheet, a as slotShouldForwardProp, at as handleBreakpoints, b as createContainer, bt as orange, c as defaultTheme$2, ct as createBreakpoints, d as excludeVariablesFromRoot, dt as styled$1, et as createSpacing, f as shouldSkipGeneratingVar, ft as require_prop_types, g as duration, gt as createCache, h as createTransitions, ht as CacheProvider, i as rootShouldForwardProp, j as decomposeColor, k as alpha, l as createTheme, lt as deepmerge, m as getOverlayAlpha, mt as keyframes, n as globalCss, nt as getValue, o as GlobalStyles, ot as mergeBreakpointsInOrder, p as createColorScheme, pt as css, q as generateUtilityClass, r as styled, rt as getPath, s as useTheme, st as resolveBreakpointValues, t as useDefaultProps, tt as createUnarySpacing, u as createThemeWithVars, ut as require_react_is, v as createTypography, vt as identifier_default, wt as purple, x as composeClasses, xt as green, y as createMixins, yt as grey, z as rgbToHex } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { $ as styleFunctionSx_default, A as darken, B as clamp, C as InitColorSchemeScript$1, Ct as blue, D as useRtl, E as useId, Et as common, F as hexToRgb, G as styled$2, H as useThemeProps$1, I as hslToRgb, J as clsx, K as generateUtilityClasses, L as lighten, M as emphasize, N as getContrastRatio, O as exactProp, P as getLuminance, Q as createTheme$1, R as recomposeColor, S as createCssVarsProvider, St as lightBlue, T as ThemeProvider$1, Tt as red, U as getThemeProps, V as useEnhancedEffect, W as resolveProps, X as useTheme$1, Y as ClassNameGenerator, Z as useTheme$2, _ as easing, _t as StyleSheet, a as slotShouldForwardProp, at as handleBreakpoints, b as createContainer, bt as orange, c as defaultTheme$2, ct as createBreakpoints, d as excludeVariablesFromRoot, dt as styled$1, et as createSpacing, f as shouldSkipGeneratingVar, ft as require_prop_types, g as duration, gt as createCache, h as createTransitions, ht as CacheProvider, i as rootShouldForwardProp, j as decomposeColor, k as alpha, l as createTheme, lt as deepmerge, m as getOverlayAlpha, mt as keyframes, n as globalCss, nt as getValue, o as GlobalStyles, ot as mergeBreakpointsInOrder, p as createColorScheme, pt as css, q as generateUtilityClass, r as styled, rt as getPath, s as useTheme, st as resolveBreakpointValues, t as useDefaultProps, tt as createUnarySpacing, u as createThemeWithVars, ut as require_react_is, v as createTypography, vt as identifier_default, wt as purple, x as composeClasses, xt as green, y as createMixins, yt as grey, z as rgbToHex } from "./DefaultPropsProvider-Devaabf6.js";
-import { A as requirePropFactory_default, B as useEnhancedEffect_default, C as useEventCallback_default, D as useId_default, E as unsupportedProp_default, F as createChainedFunction_default, G as useForkRef, H as ownerWindow, I as createChainedFunction, J as elementTypeAcceptingRef_default, K as debounce$1, L as getActiveElement_default, M as isMuiElement_default, N as deprecatedPropType_default, O as setRef_default, P as debounce_default, R as activeElement, S as isEventHandler, T as useControlled, U as ownerDocument, V as useForkRef_default, W as useEventCallback, Y as isMuiElement, _ as isFocusVisible, a as getButtonUtilityClass, b as unstable_ClassNameGenerator, c as getCircularProgressUtilityClass, d as buttonBaseClasses, f as getButtonBaseUtilityClass, g as useTimeout, h as Timeout, i as buttonClasses, j as ownerWindow_default, k as setRef, l as createSimplePaletteValueFilter, m as touchRippleClasses, n as ButtonGroupButtonContext, o as CircularProgress, p as getTouchRippleUtilityClass, q as refType, r as ButtonGroupContext, s as circularProgressClasses, t as Button, u as ButtonBase, v as useReducedMotion, w as useControlled_default, x as mergeSlotProps, y as useLazyRef, z as ownerDocument_default } from "./Button-BmYYoL72.js";
+import { A as requirePropFactory_default, B as useEnhancedEffect_default, C as useEventCallback_default, D as useId_default, E as unsupportedProp_default, F as createChainedFunction_default, G as useForkRef, H as ownerWindow, I as createChainedFunction, J as elementTypeAcceptingRef_default, K as debounce$1, L as getActiveElement_default, M as isMuiElement_default, N as deprecatedPropType_default, O as setRef_default, P as debounce_default, R as activeElement, S as isEventHandler, T as useControlled, U as ownerDocument, V as useForkRef_default, W as useEventCallback, Y as isMuiElement, _ as isFocusVisible, a as getButtonUtilityClass, b as unstable_ClassNameGenerator, c as getCircularProgressUtilityClass, d as buttonBaseClasses, f as getButtonBaseUtilityClass, g as useTimeout, h as Timeout, i as buttonClasses, j as ownerWindow_default, k as setRef, l as createSimplePaletteValueFilter, m as touchRippleClasses, n as ButtonGroupButtonContext, o as CircularProgress, p as getTouchRippleUtilityClass, q as refType, r as ButtonGroupContext, s as circularProgressClasses, t as Button, u as ButtonBase, v as useReducedMotion, w as useControlled_default, x as mergeSlotProps, y as useLazyRef, z as ownerDocument_default } from "./Button-Cn1m5Ary.js";
 import { a as getTranslateOffsets, c as chainPropTypes, i as getTransitionStyles, n as getTransitionChildStyle, o as normalizedTransitionCallback, r as getTransitionProps, s as reflow, t as getReducedMotionStyles } from "./utils-BAFz8yJQ.js";
-import { t as memoTheme } from "./memoTheme-BJeNW3MA.js";
-import { t as capitalize_default } from "./capitalize-BcCc-Aq_.js";
-import { i as integerPropType, n as getPaperUtilityClass, r as paperClasses, t as Paper } from "./Paper-DqboQ4on.js";
-import { n as getTableUtilityClass, r as tableClasses, t as Table } from "./Table-DLX5RgzI.js";
+import { t as memoTheme } from "./memoTheme-Dl9UblrA.js";
+import { t as capitalize_default } from "./capitalize-Cm8XXkvf.js";
+import { i as integerPropType, n as getPaperUtilityClass, r as paperClasses, t as Paper } from "./Paper-CXXNR-r-.js";
+import { t as require_react_dom } from "./react-dom.js";
+import { n as getTableUtilityClass, r as tableClasses, t as Table } from "./Table-BbLJT_N5.js";
 import { t as Tablelvl2Context } from "./Tablelvl2Context-B6In8KqX.js";
-import { n as getTableBodyUtilityClass, r as tableBodyClasses, t as TableBody } from "./TableBody-DOJBZ1xP.js";
-import { n as getTableCellUtilityClass, r as tableCellClasses, t as TableCell } from "./TableCell-Dpc2lxJn.js";
-import { n as getTableContainerUtilityClass, r as tableContainerClasses, t as TableContainer } from "./TableContainer-CCW0Y-Wj.js";
-import { n as getTableHeadUtilityClass, r as tableHeadClasses, t as TableHead } from "./TableHead-4Dh-lvax.js";
-import { n as getTableRowUtilityClass, r as tableRowClasses, t as TableRow } from "./TableRow-C7eqgX1_.js";
+import { n as getTableBodyUtilityClass, r as tableBodyClasses, t as TableBody } from "./TableBody-Bo5PIhSR.js";
+import { n as getTableCellUtilityClass, r as tableCellClasses, t as TableCell } from "./TableCell-BFkKzwlr.js";
+import { n as getTableContainerUtilityClass, r as tableContainerClasses, t as TableContainer } from "./TableContainer-BdYjTXmh.js";
+import { n as getTableHeadUtilityClass, r as tableHeadClasses, t as TableHead } from "./TableHead-CaWH6cRv.js";
+import { n as getTableRowUtilityClass, r as tableRowClasses, t as TableRow } from "./TableRow-C1J4ID5U.js";
 //#region node_modules/@mui/material/colors/pink.mjs
 var pink = {
 	50: "#fce4ec",
@@ -312,7 +312,7 @@ function getCache(injectFirst, enableCssLayer) {
 			}
 		}
 		const emotionCache = createEmotionCache({
-			key: enableCssLayer ? "mui" : "css",
+			key: "css",
 			insertionPoint: injectFirst ? insertionPoint : void 0
 		}, MyStyleSheet);
 		if (enableCssLayer) {
@@ -3055,10 +3055,6 @@ function Transition(props) {
 	});
 	const statusRef = import_react.useRef(status);
 	statusRef.current = status;
-	if (inProp && status === "unmounted") {
-		statusRef.current = "exited";
-		setStatus("exited");
-	}
 	const shouldAppearOnMountRef = import_react.useRef(inProp && shouldEnterOnMount);
 	const mountedRef = import_react.useRef(false);
 	const nextCallbackRef = import_react.useRef(null);
@@ -3211,7 +3207,10 @@ function Transition(props) {
 		if (!mountedRef.current) return;
 		const current = statusRef.current;
 		if (inProp) {
-			if (current !== "entering" && current !== "entered") updateStatus(false, "entering");
+			if (current === "unmounted") {
+				statusRef.current = "exited";
+				setStatus("exited");
+			} else if (current !== "entering" && current !== "entered") updateStatus(false, "entering");
 		} else if (current === "entering" || current === "entered") updateStatus(false, "exiting");
 		else if (current === "exited" && unmountOnExit) {
 			statusRef.current = "unmounted";
@@ -9888,11 +9887,7 @@ Autocomplete.propTypes = {
 	*/
 	freeSolo: import_prop_types.default.bool,
 	/**
-	* If `true`, the input takes up the full width of its container.
-	*
-	* `Autocomplete` treats `undefined` and `false` differently.
-	* If `undefined`, the inner input takes up the full width of its container.
-	* If `false`, the inner input is restricted to its intrinsic width.
+	* If `true`, the input will take up the full width of its container.
 	* @default false
 	*/
 	fullWidth: import_prop_types.default.bool,
@@ -36394,15 +36389,15 @@ function useScrollTrigger(options = {}) {
 }
 //#endregion
 //#region node_modules/@mui/material/version/index.mjs
-var version = "9.1.1";
+var version = "9.1.0";
 var major = 9;
 var minor = 1;
-var patch = 1;
+var patch = 0;
 var prerelease = void 0;
 //#endregion
 //#region node_modules/@mui/material/index.mjs
 /**
-* @mui/material v9.1.1
+* @mui/material v9.1.0
 *
 * @license MIT
 * This source code is licensed under the MIT license found in the

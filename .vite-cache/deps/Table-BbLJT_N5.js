@@ -1,7 +1,7 @@
 import { i as __toESM, t as require_react } from "./react-CZunmVaX.js";
+import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Devaabf6.js";
-import { t as memoTheme } from "./memoTheme-BJeNW3MA.js";
+import { t as memoTheme } from "./memoTheme-Dl9UblrA.js";
 import { t as TableContext } from "./TableContext-DX63MjVs.js";
 //#region node_modules/@mui/material/Table/tableClasses.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
@@ -130,4 +130,4 @@ Table.propTypes = {
 //#endregion
 export { getTableUtilityClass as n, tableClasses as r, Table as t };
 
-//# sourceMappingURL=Table-DLX5RgzI.js.map
+//# sourceMappingURL=Table-BbLJT_N5.js.map

@@ -1,9 +1,9 @@
 import { i as __toESM, t as require_react } from "./react-CZunmVaX.js";
+import { E as useId, J as clsx, K as generateUtilityClasses, V as useEnhancedEffect, W as resolveProps, Y as ClassNameGenerator, ft as require_prop_types, i as rootShouldForwardProp, mt as keyframes, pt as css, q as generateUtilityClass, r as styled, s as useTheme, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { E as useId, J as clsx, K as generateUtilityClasses, V as useEnhancedEffect, W as resolveProps, Y as ClassNameGenerator, ft as require_prop_types, i as rootShouldForwardProp, mt as keyframes, pt as css, q as generateUtilityClass, r as styled, s as useTheme, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Devaabf6.js";
 import { c as chainPropTypes, i as getTransitionStyles, t as getReducedMotionStyles } from "./utils-BAFz8yJQ.js";
-import { t as memoTheme } from "./memoTheme-BJeNW3MA.js";
-import { t as capitalize_default } from "./capitalize-BcCc-Aq_.js";
+import { t as memoTheme } from "./memoTheme-Dl9UblrA.js";
+import { t as capitalize_default } from "./capitalize-Cm8XXkvf.js";
 //#region node_modules/@mui/utils/isMuiElement/isMuiElement.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 function isMuiElement(element, muiNames) {
@@ -999,23 +999,6 @@ var TouchRippleRipple = styled(Ripple, {
     transform: scale(1);
   }
 
-  /*
-   * Order matters: 'child', 'childLeaving' and 'childPulsate' apply to the same
-   * element with equal specificity, so the later rule wins. 'child' must come
-   * before 'childLeaving' so the leaving 'opacity: 0' takes precedence. A focus
-   * (pulsate) ripple keeps 'pulsateKeyframe' (no opacity animation) on exit, so
-   * it relies on this static 'opacity: 0' to disappear on blur instead of
-   * lingering until removal.
-   */
-  & .${touchRippleClasses.child} {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: currentColor;
-  }
-
   & .${touchRippleClasses.childLeaving} {
     opacity: 0;
   }
@@ -1028,6 +1011,15 @@ var TouchRippleRipple = styled(Ripple, {
   }
 
   ${({ theme }) => getAnimationStyles(theme)}
+
+  & .${touchRippleClasses.child} {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
 `;
 /**
 * @ignore - internal component.
@@ -2593,4 +2585,4 @@ Button.propTypes = {
 //#endregion
 export { requirePropFactory_default as A, useEnhancedEffect_default as B, useEventCallback_default as C, useId_default as D, unsupportedProp_default as E, createChainedFunction_default as F, useForkRef as G, ownerWindow as H, createChainedFunction as I, elementTypeAcceptingRef_default as J, debounce as K, getActiveElement_default as L, isMuiElement_default as M, deprecatedPropType_default as N, setRef_default as O, debounce_default as P, activeElement as R, isEventHandler as S, useControlled as T, ownerDocument as U, useForkRef_default as V, useEventCallback as W, isMuiElement as Y, isFocusVisible as _, getButtonUtilityClass as a, unstable_ClassNameGenerator as b, getCircularProgressUtilityClass as c, buttonBaseClasses as d, getButtonBaseUtilityClass as f, useTimeout as g, Timeout as h, buttonClasses as i, ownerWindow_default as j, setRef as k, createSimplePaletteValueFilter as l, touchRippleClasses as m, ButtonGroupButtonContext as n, CircularProgress as o, getTouchRippleUtilityClass as p, refType as q, ButtonGroupContext as r, circularProgressClasses as s, Button as t, ButtonBase as u, useReducedMotion as v, useControlled_default as w, mergeSlotProps as x, useLazyRef as y, ownerDocument_default as z };
 
-//# sourceMappingURL=Button-BmYYoL72.js.map
+//# sourceMappingURL=Button-Cn1m5Ary.js.map

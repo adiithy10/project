@@ -1,31 +1,31 @@
 import { i as __toESM, t as require_react } from "./react-CZunmVaX.js";
+import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Cu78-8ix.js";
 import { t as require_jsx_runtime } from "./react_jsx-runtime.js";
-import { J as clsx, K as generateUtilityClasses, ft as require_prop_types, q as generateUtilityClass, r as styled, t as useDefaultProps, x as composeClasses } from "./DefaultPropsProvider-Devaabf6.js";
 import { t as Tablelvl2Context } from "./Tablelvl2Context-B6In8KqX.js";
-//#region node_modules/@mui/material/TableHead/tableHeadClasses.mjs
+//#region node_modules/@mui/material/TableBody/tableBodyClasses.mjs
 var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
 var import_prop_types = /* @__PURE__ */ __toESM(require_prop_types(), 1);
-function getTableHeadUtilityClass(slot) {
-	return generateUtilityClass("MuiTableHead", slot);
+function getTableBodyUtilityClass(slot) {
+	return generateUtilityClass("MuiTableBody", slot);
 }
-var tableHeadClasses = generateUtilityClasses("MuiTableHead", ["root"]);
+var tableBodyClasses = generateUtilityClasses("MuiTableBody", ["root"]);
 //#endregion
-//#region node_modules/@mui/material/TableHead/TableHead.mjs
+//#region node_modules/@mui/material/TableBody/TableBody.mjs
 var import_jsx_runtime = require_jsx_runtime();
 var useUtilityClasses = (ownerState) => {
 	const { classes } = ownerState;
-	return composeClasses({ root: ["root"] }, getTableHeadUtilityClass, classes);
+	return composeClasses({ root: ["root"] }, getTableBodyUtilityClass, classes);
 };
-var TableHeadRoot = styled("thead", {
-	name: "MuiTableHead",
+var TableBodyRoot = styled("tbody", {
+	name: "MuiTableBody",
 	slot: "Root"
-})({ display: "table-header-group" });
-var tablelvl2 = { variant: "head" };
-var defaultComponent = "thead";
-var TableHead = /*#__PURE__*/ import_react.forwardRef(function TableHead(inProps, ref) {
+})({ display: "table-row-group" });
+var tablelvl2 = { variant: "body" };
+var defaultComponent = "tbody";
+var TableBody = /*#__PURE__*/ import_react.forwardRef(function TableBody(inProps, ref) {
 	const props = useDefaultProps({
 		props: inProps,
-		name: "MuiTableHead"
+		name: "MuiTableBody"
 	});
 	const { className, component = defaultComponent, ...other } = props;
 	const ownerState = {
@@ -35,9 +35,9 @@ var TableHead = /*#__PURE__*/ import_react.forwardRef(function TableHead(inProps
 	const classes = useUtilityClasses(ownerState);
 	return /*#__PURE__*/ (0, import_jsx_runtime.jsx)(Tablelvl2Context.Provider, {
 		value: tablelvl2,
-		children: /*#__PURE__*/ (0, import_jsx_runtime.jsx)(TableHeadRoot, {
-			as: component,
+		children: /*#__PURE__*/ (0, import_jsx_runtime.jsx)(TableBodyRoot, {
 			className: clsx(classes.root, className),
+			as: component,
 			ref,
 			role: component === defaultComponent ? null : "rowgroup",
 			ownerState,
@@ -45,7 +45,7 @@ var TableHead = /*#__PURE__*/ import_react.forwardRef(function TableHead(inProps
 		})
 	});
 });
-TableHead.propTypes = {
+TableBody.propTypes = {
 	/**
 	* The content of the component, normally `TableRow`.
 	*/
@@ -77,6 +77,6 @@ TableHead.propTypes = {
 	])
 };
 //#endregion
-export { getTableHeadUtilityClass as n, tableHeadClasses as r, TableHead as t };
+export { getTableBodyUtilityClass as n, tableBodyClasses as r, TableBody as t };
 
-//# sourceMappingURL=TableHead-4Dh-lvax.js.map
+//# sourceMappingURL=TableBody-Bo5PIhSR.js.map
