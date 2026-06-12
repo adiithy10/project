@@ -12,7 +12,11 @@ import Button from '@mui/material/Button';
 const AdminDashboard = () => {
   return (
     <div>
+
        <NavBar/>
+
+        <NavBar/>
+
         <h1>Dashboard</h1>
         <Paper sx={{ width: '100%',overflow: 'hidden'}}>
             <TableContainer sx={{ maxHeight: 440}}>
@@ -27,10 +31,16 @@ const AdminDashboard = () => {
                         </TableHead>
                         <TableBody>
                             <TableRow>
+
                                 <TableCell>26</TableCell>
                                 <TableCell>16</TableCell>
                                 <TableCell>2</TableCell>
                                 <TableCell>10</TableCell>
+
+                                <TableCell>status.pending</TableCell>
+                                <TableCell>status.progress</TableCell>
+                                <TableCell>status.resolved</TableCell>
+
                             </TableRow>
                         </TableBody>
                  

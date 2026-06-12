@@ -15,6 +15,10 @@ const NavBar = () => {
                 <Link to="/complaintlist">
                 <Button variant="contained" color="primary" >View Complaints</Button>
                 </Link>&nbsp;&nbsp;
+
+                <Link to="/mycomplaints">
+                <Button variant="contained" color="info" >My Complaints</Button>
+                </Link>&nbsp;&nbsp;
             </Toolbar>
         </AppBar>
         <br /><br /><br /><br />
