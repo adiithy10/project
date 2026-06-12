@@ -1,3 +1,14 @@
+
+
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminComplaintList from "./components/AdminComplaintList";
+import StatusUpdateScreen from "./components/StatusUpdateScreen";
+
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Login from './Components/Login'
@@ -9,8 +20,18 @@ import AdminDashboard from './Components/AdminDashboard'
 import MyComplaints from "./pages/MyComplaints";
 import ComplaintDetails from "./pages/ComplaintDetails";
 
+
+
+
+
 function App() {
   return (
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AdminComplaintList />} />
+        <Route path="/status-update" element={<StatusUpdateScreen />} />
+
     <>
       <Routes>
         <Route path='/' element={<MyComplaints />} />
@@ -21,11 +42,15 @@ function App() {
         <Route path="/complaintlist" element={<ComplainList />} />
         <Route path="/StudentDashboard" element={<StudentDashboard />} />     
         <Route path="/AdminDashboard" element={<AdminDashboard />} />
+
         <Route path="/mycomplaints" element={<MyComplaints />} />
         <Route path="/complaintdetails" element={<ComplaintDetails />} />
+
+
+
       </Routes>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
