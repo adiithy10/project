@@ -1,7 +1,7 @@
 import { Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import NavBar from './NavBar'
+
 
 const Login = () => {
   let navigate = useNavigate()
@@ -28,7 +28,7 @@ const Login = () => {
    
   return (
     <div>
-      <NavBar/>
+     
       <br /><br /><br /><br />
       <h3>Login</h3>
       <br />
