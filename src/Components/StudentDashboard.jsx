@@ -5,13 +5,15 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
-import TablePagination from '@mui/material/TablePagination';
+
 import TableRow from '@mui/material/TableRow';
 import Button from '@mui/material/Button';
+import NavBar from './NavBar';
 
 const StudentDashboard = () => {
   return (
     <div>
+      <NavBar/>
         <h1>Dashboard</h1>
            <Paper sx={{ width: '100%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 440 }}>
@@ -37,7 +39,7 @@ const StudentDashboard = () => {
      
     </Paper>
     <br /> <br /> <br /> <br /> 
-    <Button variant='contained' color='secondary'>Add Complaint</Button>&nbsp;&nbsp;&nbsp;
+    
     <Button variant='contained' color='error'>Sign Out</Button>
     </div>
   )
