@@ -4,7 +4,7 @@ import {
   Grid,
 } from "@mui/material";
 
-import ComplaintCard from "../components/ComplaintCard";
+import ComplaintCard from "../Components/ComplaintCard";
 import dummyComplaints from "../data/dummyComplaints";
 
 function MyComplaints() {
