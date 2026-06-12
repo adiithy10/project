@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import StudentDashboard from './Components/StudentDashboard'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminComplaintList from "./components/AdminComplaintList";
+import StatusUpdateScreen from "./components/StatusUpdateScreen";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<StudentDashboard/>}/>
+        <Route path="/" element={<AdminComplaintList />} />
+        <Route path="/status-update" element={<StatusUpdateScreen />} />
       </Routes>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
