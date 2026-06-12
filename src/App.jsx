@@ -1,3 +1,8 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminComplaintList from "./components/AdminComplaintList";
+import StatusUpdateScreen from "./components/StatusUpdateScreen";
+=======
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -12,10 +17,15 @@ import ComplainList from './Components/ComplainList'
 import StudentDashboard from './Components/StudentDashboard'
 import AdminDashboard from './Components/AdminDashboard'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AdminComplaintList />} />
+        <Route path="/status-update" element={<StatusUpdateScreen />} />
+
     <>
      
       <Routes>
@@ -27,9 +37,10 @@ function App() {
         <Route path = "/complaintlist" element={<ComplainList />} />
         <Route path="/StudentDashboard" element={<StudentDashboard />} />     
         <Route path="/AdminDashboard" element={<AdminDashboard />} />
+
       </Routes>
-    </>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
