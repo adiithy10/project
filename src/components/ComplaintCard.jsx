@@ -5,6 +5,7 @@ import {
   Chip,
   Button,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function ComplaintCard({ complaint }) {
   return (
@@ -34,13 +35,15 @@ function ComplaintCard({ complaint }) {
           }
         />
 
-        <Button
-          variant="contained"
-          fullWidth
-          sx={{ mt: 2 }}
-        >
-          View Details
-        </Button>
+       <Button
+       component={Link}
+       to={`/complaintdetails/${complaint.id}`}
+       variant="contained"
+       fullWidth
+       sx={{ mt: 2 }}
+>
+       View Details
+      </Button>
       </CardContent>
     </Card>
   );

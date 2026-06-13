@@ -5,7 +5,20 @@ import {
   Chip,
 } from "@mui/material";
 
+import { useParams } from "react-router-dom";
+import dummyComplaints from "../data/dummyComplaints";
+
 function ComplaintDetails() {
+  const { id } = useParams();
+
+  const complaint = dummyComplaints.find(
+    (c) => c.id === Number(id)
+  );
+
+  if (!complaint) {
+    return <h2>Complaint Not Found</h2>;
+  }
+
   return (
     <Container sx={{ mt: 5 }}>
       <Paper sx={{ p: 4 }}>
@@ -14,24 +27,30 @@ function ComplaintDetails() {
         </Typography>
 
         <Typography sx={{ mt: 2 }}>
-          WiFi Not Working
+          <strong>Title:</strong> {complaint.title}
         </Typography>
 
         <Typography>
-          Internet/Wi-Fi
+          <strong>Category:</strong> {complaint.category}
         </Typography>
 
         <Typography>
-          Hostel Block A
+          <strong>Location:</strong> {complaint.location}
         </Typography>
 
         <Typography>
-          Internet is unavailable in hostel.
+          <strong>Description:</strong> {complaint.description}
         </Typography>
 
         <Chip
-          label="Pending"
-          color="warning"
+          label={complaint.status}
+          color={
+            complaint.status === "Resolved"
+              ? "success"
+              : complaint.status === "In Progress"
+              ? "info"
+              : "warning"
+          }
           sx={{ mt: 2 }}
         />
       </Paper>
