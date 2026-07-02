@@ -1,54 +1,56 @@
-import { Button, TextField, MenuItem } from '@mui/material'
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Button, TextField, MenuItem, Container, Paper, Typography, Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Register = () => {
-  let navigate = useNavigate()
+  const navigate = useNavigate();
+  const [form, setForm] = useState({ name: '', email: '', password: '', role: 'student' });
 
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    password: '',
-    role: 'student'
-  })
+  const valueUpdate = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  let valueUpdate = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+  const submitInfo = (e) => {
+    e.preventDefault();
 
-  let submitInfo = () => {
-    console.log('Register form data:', form)
-    navigate('/login')
-  }
+    axios.post('http://localhost:4000/api/auth/register', form)
+      .then((res) => {
+        alert("Registration Successful 🎉");
+        navigate('/Login');
+      })
+      .catch((err) => {
+        console.error(err);
+        alert(err.response?.data?.message || "Registration Failed ");
+      });
+  };
 
   return (
-    <div>
-      <br /><br /><br /><br />
-      <h3>Register</h3>
-      <br />
+    <Box sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)' }}>
+      <Container maxWidth="xs">
+        <Paper elevation={4} sx={{ p: 4, borderRadius: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Typography variant="h4" fontWeight="bold" color="primary" gutterBottom>
+            Register
+          </Typography>
+          <Box component="form" onSubmit={submitInfo} sx={{ width: '100%', mt: 2 }}>
+            <TextField fullWidth label="Name" name="name" variant='outlined' margin="normal" value={form.name} onChange={valueUpdate} required />
+            <TextField fullWidth label="Email" name="email" variant='outlined' margin="normal" value={form.email} onChange={valueUpdate} required />
+            <TextField fullWidth label="Password" name="password" type="password" variant='outlined' margin="normal" value={form.password} onChange={valueUpdate} required />
+            <TextField select fullWidth label="Role" name="role" variant='outlined' margin="normal" value={form.role} onChange={valueUpdate}>
+              <MenuItem value="student">Student</MenuItem>
+              <MenuItem value="admin">Admin</MenuItem>
+            </TextField>
+            <Button type="submit" fullWidth variant="contained" color="primary" sx={{ mt: 3, mb: 2, py: 1.2, textTransform: 'none', fontWeight: 'bold' }}>
+              Register
+            </Button>
+            <Button fullWidth variant="text" onClick={() => navigate('/Login')} sx={{ textTransform: 'none' }}>
+              Already have an account? Login
+            </Button>
+          </Box>
+        </Paper>
+      </Container>
+    </Box>
+  );
+};
 
-      <TextField label="Name" variant='outlined'  value={form.name} onChange={valueUpdate} /><br /><br />
-      <TextField label="Email" variant='outlined'  value={form.email} onChange={valueUpdate} /><br /><br />
-      <TextField label="Password" type="password" variant='outlined'  value={form.password} onChange={valueUpdate} /><br /><br />
-
-      <TextField
-        select
-        label="Role"
-        variant='outlined'
-        value={form.role}
-        onChange={valueUpdate}
-        style={{ width: 227 }}
-      >
-        <MenuItem value="student">Student</MenuItem>
-        <MenuItem value="admin">Admin</MenuItem>
-      </TextField>
-      <br /><br />
-
-      <Button variant="contained" onClick={submitInfo}>Register</Button>
-      <br /><br />
-      <Button variant="text" onClick={() => navigate('/login')}>Already have an account? Login</Button>
-    </div>
-  )
-}
-
-export default Register
+export default Register;
